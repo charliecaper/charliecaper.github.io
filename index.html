@@ -4,8 +4,8 @@
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="arjs/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-      <a-marker type='barcode' value='5'>
+    <a-scene embedded arjs>
+      <a-marker preset="kanji">
         <a-entity
           position="0 0 0"
           scale="0.03 0.03 0.03"
